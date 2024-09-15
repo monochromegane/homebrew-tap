@@ -1,0 +1,19 @@
+name: Update formulae
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '00 6,18 * * *'
+
+jobs:
+  update:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: make devel-deps
+      - run: make update-all
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
+          add: '*.rb'
