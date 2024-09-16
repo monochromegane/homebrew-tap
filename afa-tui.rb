@@ -1,27 +1,27 @@
 class AfaTui < Formula
   desc ' AFA-TUI is a rich Text User Interface for AFA.'
-  version '0.1.2'
+  version '0.1.3'
   homepage 'https://github.com/monochromegane/afa-tui'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/monochromegane/afa-tui/releases/download/v0.1.2/afa-tui_v0.1.2_darwin_arm64.zip'
-      sha256 '45dd65ef238851a8b4431982fb71bf7bdebbdad6c1f76e30d4a09321b93de506'
+      url 'https://github.com/monochromegane/afa-tui/releases/download/v0.1.3/afa-tui_v0.1.3_darwin_arm64.zip'
+      sha256 '11d202d26efd8921ad1eece1eb088901cd97f77702470e7003878890d3117337'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/monochromegane/afa-tui/releases/download/v0.1.2/afa-tui_v0.1.2_darwin_amd64.zip'
-      sha256 'b9a571939b04b3af59ba3c3f9b4fce445036eb9a73b0739e836ed74b83e8e7db'
+      url 'https://github.com/monochromegane/afa-tui/releases/download/v0.1.3/afa-tui_v0.1.3_darwin_amd64.zip'
+      sha256 '045c944288ad80c14dc0dd9d703fa439da5ad0a96b31e4e2aded311487d56336'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/monochromegane/afa-tui/releases/download/v0.1.2/afa-tui_v0.1.2_linux_arm64.tar.gz'
-      sha256 '71d37cbcf23fe44d1a6f582dc226b63a1a00ac8e5c7e0447c325a1fd913b5115'
+      url 'https://github.com/monochromegane/afa-tui/releases/download/v0.1.3/afa-tui_v0.1.3_linux_arm64.tar.gz'
+      sha256 'e5cf6acc31edf12ce7987f25a66c6c0430f84e2b8c1b346f78b50dd1b9948cc4'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/monochromegane/afa-tui/releases/download/v0.1.2/afa-tui_v0.1.2_linux_amd64.tar.gz'
-      sha256 '9c0bf208dd0d63353add1d2f4158de0049c0450cfb72839e80e510eaf5d2216b'
+      url 'https://github.com/monochromegane/afa-tui/releases/download/v0.1.3/afa-tui_v0.1.3_linux_amd64.tar.gz'
+      sha256 'ccc6a22343e98735a0a9a27ac12575b2bc4e649f31bcde42baca865cf7e21467'
     end
   end
 
