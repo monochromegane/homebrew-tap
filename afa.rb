@@ -1,27 +1,27 @@
 class Afa < Formula
   desc 'AFA is a terminal-friendly AI command.'
-  version '0.1.4'
+  version '0.1.5'
   homepage 'https://github.com/monochromegane/afa'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/monochromegane/afa/releases/download/v0.1.4/afa_v0.1.4_darwin_arm64.zip'
-      sha256 'a35c688c89f2a17ddc25c25e6a0d756aa5c2b397864f36159228940935507252'
+      url 'https://github.com/monochromegane/afa/releases/download/v0.1.5/afa_v0.1.5_darwin_arm64.zip'
+      sha256 '73d08d5ff660933fa66524984ef53446e5e940608e1cfb1ddd9185132051cf07'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/monochromegane/afa/releases/download/v0.1.4/afa_v0.1.4_darwin_amd64.zip'
-      sha256 '6f605a6d52138dc19e1f16e578fc13559aba17b6107a49f566cb2c0b9ef62ee7'
+      url 'https://github.com/monochromegane/afa/releases/download/v0.1.5/afa_v0.1.5_darwin_amd64.zip'
+      sha256 'ee576224b02358ed118038d3df314571387b69c4499d1e38b5069b68d1c3c1a6'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/monochromegane/afa/releases/download/v0.1.4/afa_v0.1.4_linux_arm64.tar.gz'
-      sha256 'f75313cd96d90d408149c6eed2799615f1974bdadbbdcf71166f23065d17f742'
+      url 'https://github.com/monochromegane/afa/releases/download/v0.1.5/afa_v0.1.5_linux_arm64.tar.gz'
+      sha256 'c4e339abf6f2dbc47a5556b0c7e8ddcf860d88e3a6614ca574ee689619f76ce3'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/monochromegane/afa/releases/download/v0.1.4/afa_v0.1.4_linux_amd64.tar.gz'
-      sha256 '7bd2882718f831c31772a7d3adb7920e92eb066747249f1224d37b3b15ae28e8'
+      url 'https://github.com/monochromegane/afa/releases/download/v0.1.5/afa_v0.1.5_linux_amd64.tar.gz'
+      sha256 '5878fcee6403e329b742e58ebad9c365f55f00fc10db998adeb0936b9b6d849b'
     end
   end
 
