@@ -1,27 +1,27 @@
 class McpBigqueryServer < Formula
   desc 'MCP BigQuery Server is a server that allows you to query BigQuery tables using MCP.'
-  version '0.0.6'
+  version '0.0.7'
   homepage 'https://github.com/monochromegane/mcp-bigquery-server'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/monochromegane/mcp-bigquery-server/releases/download/v0.0.6/mcp-bigquery-server_v0.0.6_darwin_arm64.zip'
-      sha256 'c8e1ccf0ab6b7d23fb97b21655ad5c5b6fc5ac28d5ac8da4eb9db80b736d4398'
+      url 'https://github.com/monochromegane/mcp-bigquery-server/releases/download/v0.0.7/mcp-bigquery-server_v0.0.7_darwin_arm64.zip'
+      sha256 '747ff28d7a69cdcce09701024c459093de33d5b72636eb5bbc50be15cebeade7'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/monochromegane/mcp-bigquery-server/releases/download/v0.0.6/mcp-bigquery-server_v0.0.6_darwin_amd64.zip'
-      sha256 'ca3bf771b763d574bce49049c68d33ad9420de0a2d6942d12694bd5126099427'
+      url 'https://github.com/monochromegane/mcp-bigquery-server/releases/download/v0.0.7/mcp-bigquery-server_v0.0.7_darwin_amd64.zip'
+      sha256 '9a110853f2ac838ec2ac1fd8527c51954ba7a35a29c0a4ef2892daa2ac8f528c'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/monochromegane/mcp-bigquery-server/releases/download/v0.0.6/mcp-bigquery-server_v0.0.6_linux_arm64.tar.gz'
-      sha256 '6cc616565f28ecd2e8391390394dddbbc475ad60187470ae1108b8dbfd83ba6e'
+      url 'https://github.com/monochromegane/mcp-bigquery-server/releases/download/v0.0.7/mcp-bigquery-server_v0.0.7_linux_arm64.tar.gz'
+      sha256 'a78fd99482e5c6155f76720bf3362327b9431ea4c8d157869d9f20fc802bb25e'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/monochromegane/mcp-bigquery-server/releases/download/v0.0.6/mcp-bigquery-server_v0.0.6_linux_amd64.tar.gz'
-      sha256 '79f1aa49fc76c0ecd0bce1fd27349962acd11d355e84b9f4d3ee1bfba080b124'
+      url 'https://github.com/monochromegane/mcp-bigquery-server/releases/download/v0.0.7/mcp-bigquery-server_v0.0.7_linux_amd64.tar.gz'
+      sha256 '6d3814f90197078258f61684c46fffa3245a09cb28aed0b71267593f0fa07d87'
     end
   end
 
