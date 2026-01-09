@@ -1,26 +1,26 @@
 class Stamp < Formula
-  version '0.0.1'
+  version '0.0.2'
   homepage 'https://github.com/monochromegane/stamp'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/monochromegane/stamp/releases/download/v0.0.1/stamp_v0.0.1_darwin_arm64.zip'
-      sha256 '90510da7a58e5f028491430445a97a42367e49b3655a07f21b8ad9e0b4ac537b'
+      url 'https://github.com/monochromegane/stamp/releases/download/v0.0.2/stamp_v0.0.2_darwin_arm64.zip'
+      sha256 '87cc2bf88dec86e018f81706806180825b89f6a84ae49027bba3efac8466c6db'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/monochromegane/stamp/releases/download/v0.0.1/stamp_v0.0.1_darwin_amd64.zip'
-      sha256 '4d569d7b55d36afe89fd5bb9791eb55f5f724254fceff32c1d549310451ecc11'
+      url 'https://github.com/monochromegane/stamp/releases/download/v0.0.2/stamp_v0.0.2_darwin_amd64.zip'
+      sha256 '57bd459d1e513353a48faea59067b9c16148dd95f2f2a2f427bbbb9185d96b11'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/monochromegane/stamp/releases/download/v0.0.1/stamp_v0.0.1_linux_arm64.tar.gz'
-      sha256 '04bd1040bc5b35bc77e7070471614e36098a121c1c1318b5e58c53ae30797672'
+      url 'https://github.com/monochromegane/stamp/releases/download/v0.0.2/stamp_v0.0.2_linux_arm64.tar.gz'
+      sha256 '83f7efd9de7b81b16860eefb9f04790ac42e3e6db556623a66be4d398fe59495'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/monochromegane/stamp/releases/download/v0.0.1/stamp_v0.0.1_linux_amd64.tar.gz'
-      sha256 '197c8c7c18887a9836da6d765fc21a697558df32370e8c0c3852d04ed0f77b90'
+      url 'https://github.com/monochromegane/stamp/releases/download/v0.0.2/stamp_v0.0.2_linux_amd64.tar.gz'
+      sha256 '5109f7ff34202c121bce1799036ffa846dade1309432d220c98c7cae35e70647'
     end
   end
 
