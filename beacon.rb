@@ -1,26 +1,26 @@
 class Beacon < Formula
-  version '0.0.1'
+  version '0.0.2'
   homepage 'https://github.com/monochromegane/beacon'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/monochromegane/beacon/releases/download/v0.0.1/beacon_v0.0.1_darwin_arm64.zip'
-      sha256 '68caf989b911d9dad8091d6c1d1ccd7074d01f4ef4a27d3671e85a6320519ab7'
+      url 'https://github.com/monochromegane/beacon/releases/download/v0.0.2/beacon_v0.0.2_darwin_arm64.zip'
+      sha256 '519781e3ec680fe4a5980810452773a70d06df48d3cb137cc8a07948eb482cf0'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/monochromegane/beacon/releases/download/v0.0.1/beacon_v0.0.1_darwin_amd64.zip'
-      sha256 'c2d9358488d2eb6eaf34355c780f283fc1aae8033391f33e3cc489a6be962589'
+      url 'https://github.com/monochromegane/beacon/releases/download/v0.0.2/beacon_v0.0.2_darwin_amd64.zip'
+      sha256 'e6be2ab90ac2ae5360f561368d2c2f40cb8398a342d6d8006bd342e497462f2a'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/monochromegane/beacon/releases/download/v0.0.1/beacon_v0.0.1_linux_arm64.tar.gz'
-      sha256 '797797950d5b4c700a80e1d0ecb357a6e78839c5de7e2984edf0e8ab5a542920'
+      url 'https://github.com/monochromegane/beacon/releases/download/v0.0.2/beacon_v0.0.2_linux_arm64.tar.gz'
+      sha256 '9a90d615758926e1a7f7762c8062b33924f401f24e17faa73f3f1aca14479597'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/monochromegane/beacon/releases/download/v0.0.1/beacon_v0.0.1_linux_amd64.tar.gz'
-      sha256 'ed352f1157fc294653a820759cb422bee9f8a831abf67bfd9e0eff2ca70dd62a'
+      url 'https://github.com/monochromegane/beacon/releases/download/v0.0.2/beacon_v0.0.2_linux_amd64.tar.gz'
+      sha256 '5d8920bb0b33683669210db80ed4a289b00a951cca56b8f5106a46383e12db1b'
     end
   end
 
